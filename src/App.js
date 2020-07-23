@@ -2,16 +2,16 @@ import React from "react";
 import "./App.css";
 import Chart from "./components/Chart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Evelyn from "./students/Evelyn";
-import Aranka from "./students/Aranka";
-import Floris from "./students/Floris";
-import Hector from "./students/Hector";
-import Martina from "./students/Martina";
-import Maurits from "./students/Maurits";
-import Rahima from "./students/Rahima";
-import Sandra from "./students/Sandra";
-import Storm from "./students/Storm";
-import Wietske from "./students/Wietske";
+import Evelyn from "./studentComponents/Evelyn";
+import Aranka from "./studentComponents/Aranka";
+import Floris from "./studentComponents/Floris";
+import Hector from "./studentComponents/Hector";
+import Martina from "./studentComponents/Martina";
+import Maurits from "./studentComponents/Maurits";
+import Rahima from "./studentComponents/Rahima";
+import Sandra from "./studentComponents/Sandra";
+import Storm from "./studentComponents/Storm";
+import Wietske from "./studentComponents/Wietske";
 import Students from "./components/Students";
 
 function App() {

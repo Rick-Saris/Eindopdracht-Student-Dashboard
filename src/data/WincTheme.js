@@ -210,12 +210,11 @@ const wincTheme = {
       width: 350,
       height: 350,
       padding: 50
-      // bar colors
     },
     group: {
       colorScale: [
-        "#F4511E",
-        "#FFF59D",
+        "#006400",
+        "#000000",
         "#DCE775",
         "#8BC34A",
         "#00796B",
@@ -227,8 +226,8 @@ const wincTheme = {
     },
     legend: {
       colorScale: [
-        "#F4511E",
-        "#FFF59D",
+        "#006400",
+        "#000000",
         "#DCE775",
         "#8BC34A",
         "#00796B",

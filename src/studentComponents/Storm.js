@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import WincThema from "../data/WincTheme";
 import Assigments from "../data/assignmentRatingAverage";
-import averageFunRates from "../chartData/AverageRatingFun";
-import difficultyRateInAvarage from "../chartData/AverageRatingDifficulty";
+import StudentDifficultyRate from "../chartData/StudentDifficultyRate";
+import StudentFunRate from "../chartData/StudentFunRate";
 import {
   VictoryBar,
   VictoryChart,
@@ -14,18 +14,17 @@ import {
 } from "victory";
 
 const wincTheme = WincThema;
-const averageDifficulty = difficultyRateInAvarage;
-const averageFunRate = averageFunRates;
-let assignmentRatingAverage = Assigments;
+const allDifficulty = StudentDifficultyRate;
+const allFun = StudentFunRate;
+let assignmentRatingAverage = Assigments; 
 
-const getAverageDifficulty = () => averageDifficulty.splice(0, 1);
-const getAverageFunRate = () => averageFunRate.splice(0, 1);
-console.log(averageDifficulty)
+const getDifficultyStorm = () => allDifficulty[8].splice(0, 1);
+const getFunStorm = () => allFun[8].splice(0, 1);
 
 assignmentRatingAverage = assignmentRatingAverage.map((avg) => ({
   assignment: avg.assignment,
-  difficultyRating: getAverageDifficulty()[0],
-  enjoymentRating: getAverageFunRate()[0],
+  difficultyRating: getDifficultyStorm()[0],
+  enjoymentRating: getFunStorm()[0],
 }));
 
 const assignmentRatingAverageWithLabels = assignmentRatingAverage.map(
@@ -39,7 +38,7 @@ const assignmentRatingAverageWithLabels = assignmentRatingAverage.map(
   })
 );
 
-class Chart extends Component {
+class Storm extends Component {
 state = {
       difficult: {
         data: { visibility: "visible" },
@@ -48,7 +47,7 @@ state = {
         data: { visibility: "visible" },
       },
     };
-  
+
   render() {
     const filterDifficulty = (event) => {
       if (event.target.checked) {
@@ -57,7 +56,7 @@ state = {
         this.setState({ difficult: { data: { visibility: "hidden" } } });
       }
     };
-    
+
     const filterFun = (event) => {
       if (event.target.checked) {
         this.setState({ fun: { data: { visibility: "visible" } } });
@@ -68,9 +67,8 @@ state = {
 
     return (
       <div className="chart">
-        <h1>Dashboard overview</h1>
+        <h2>Storm</h2>
         <figure>
-          <h2>Average rating assignments</h2>
           <label>
             <input
               type="checkbox"
@@ -154,4 +152,4 @@ state = {
   }
 }
 
-export default Chart;
+export default Storm;

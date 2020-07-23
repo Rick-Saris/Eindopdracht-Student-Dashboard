@@ -21,42 +21,47 @@ const Students = () => {
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Evelyn">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Floris">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Hector">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Martina">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Maurits">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Rahima">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Sandra">
           Click here to see individual student
           </Link>
         </button>
         <button >
-          <Link to="/Aranka">
+          <Link to="/Storm">
+          Click here to see individual student
+          </Link>
+        </button>
+        <button >
+          <Link to="/Wietske">
           Click here to see individual student
           </Link>
         </button>
