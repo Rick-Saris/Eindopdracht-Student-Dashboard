@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
-import Chart from "./chart/Chart";
+import Chart from "./components/Chart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Evelyn from "./Students/Evelyn";
-import Aranka from "./Students/Aranka";
-import Floris from "./Students/Floris";
-import Hector from "./Students/Hector";
-import Martina from "./Students/Martina";
-import Maurits from "./Students/Maurits";
-import Rahima from "./Students/Rahima";
-import Sandra from "./Students/Sandra";
-import Storm from "./Students/Storm";
-import Wietske from "./Students/Wietske";
-import Students from "./Students/Students";
+import Evelyn from "./students/Evelyn";
+import Aranka from "./students/Aranka";
+import Floris from "./students/Floris";
+import Hector from "./students/Hector";
+import Martina from "./students/Martina";
+import Maurits from "./students/Maurits";
+import Rahima from "./students/Rahima";
+import Sandra from "./students/Sandra";
+import Storm from "./students/Storm";
+import Wietske from "./students/Wietske";
+import Students from "./components/Students";
 
 function App() {
   return (
