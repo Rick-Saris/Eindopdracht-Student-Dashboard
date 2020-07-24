@@ -20,7 +20,7 @@ let assignmentRatingAverage = Assigments;
 
 const getAverageDifficulty = () => averageDifficulty.splice(0, 1);
 const getAverageFunRate = () => averageFunRate.splice(0, 1);
-console.log(averageDifficulty)
+console.log(averageDifficulty);
 
 assignmentRatingAverage = assignmentRatingAverage.map((avg) => ({
   assignment: avg.assignment,
@@ -40,15 +40,15 @@ const assignmentRatingAverageWithLabels = assignmentRatingAverage.map(
 );
 
 class Chart extends Component {
-state = {
-      difficult: {
-        data: { visibility: "visible" },
-      },
-      fun: {
-        data: { visibility: "visible" },
-      },
-    };
-  
+  state = {
+    difficult: {
+      data: { visibility: "visible" },
+    },
+    fun: {
+      data: { visibility: "visible" },
+    },
+  };
+
   render() {
     const filterDifficulty = (event) => {
       if (event.target.checked) {
@@ -57,7 +57,7 @@ state = {
         this.setState({ difficult: { data: { visibility: "hidden" } } });
       }
     };
-    
+
     const filterFun = (event) => {
       if (event.target.checked) {
         this.setState({ fun: { data: { visibility: "visible" } } });
@@ -100,6 +100,7 @@ state = {
             fontSize={20}
           >
             <VictoryLegend
+              className="legend"
               x={260}
               y={0}
               title="Legend"

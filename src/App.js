@@ -1,7 +1,7 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import Chart from "./components/Chart";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Evelyn from "./studentComponents/Evelyn";
 import Aranka from "./studentComponents/Aranka";
 import Floris from "./studentComponents/Floris";

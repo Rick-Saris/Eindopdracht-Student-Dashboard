@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +18,102 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header li {
+  margin-top: 0;
+  display: inline-flex;
+  list-style-type: none;
+  padding: 8px;
+  margin-left: 20px;
+}
+
+#header li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#header li a:hover {
+  font-size: 24px;
+}
+
+#header {
+  background: darkgreen;
+  margin: 0;
+  padding: 50px;
+}
+
+figure {
+  border-style: solid;
+  border-width: thin;
+  width: 1300px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.chart h2 {
+  text-align: center;
+}
+
+.Boxes {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 450px);
+  grid-gap: 40px;
+  margin: auto;
+}
+
+.boxOne {
+  background-color: darkgreen;
+  padding-top: 60px;
+  margin: 10px;
+  border-style: solid;
+  border-width: thin;
+}
+.boxTwo {
+  background-color: darkgreen;
+  text-align: center;
+  border: 0px solid #000000;
+  transition-duration: 1000ms;
+  height: 120px;
+}
+div.imageBox img {
+  position: static;
+  width: 100px;
+  height: 100px;
+  top: 220px;
+  left: 10;
+  border: 0px solid #000000;
+  transform: translateX(-50%);
+  transform: translateY(-50px);
+}
+
+.boxTwo h5 {
+  color: black;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+  transform: translateY(-45px);
+}
+
+.btn {
+  opacity: 0;
+  border-radius: 5px;
+  transform: translate(90px, 28px);
+  cursor: pointer;
+}
+
+.boxOne:hover .boxTwo img {
+  visibility: hidden;
 }
